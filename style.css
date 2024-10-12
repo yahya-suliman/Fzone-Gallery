@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/back.jpg'); /* Background image for the entire body */
+    background-size: cover; /* Make sure the background image covers the entire area */
+    background-position: center; /* Center the background image */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.title-bar {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* Solid white background for title bar */
+    padding: 5px; /* Smaller height for title bar */
+}
+
+.logo {
+    max-width: 50px; /* Adjust logo size */
+    margin-right: 10px;
+}
+
+.fzone-text {
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold;
+    color: #000; /* Change to black */
+    margin-right: 20px;
+}
+
+.welcome-message {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 20px;
+    color: #000; /* Change to black */
+}
+
+.contact-icons {
+    display: flex;
+    align-items: center;
+}
+
+.contact-text {
+    margin-right: 10px; /* Space between "Contact Us" and icons */
+    font-size: 16px; /* Font size for "Contact Us" */
+}
+
+.social-logo {
+    max-width: 30px; /* Adjust size for uniformity */
+    margin-left: 10px;
+}
+
+.large-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url('images/back.jpg'); /* Background image for the large video container */
+    background-size: cover; /* Ensure it covers the entire container */
+    background-position: center; /* Center the background image */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.large-video-container video {
+    max-width: 80%;
+    max-height: 500px;
+    border-radius: 10px; /* Rounded corners for the video */
+}
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-item {
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;  /* Smooth transition effect */
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background for small videos */
+}
+
+.video-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8); /* Slightly darker to improve visibility */
+}
+
+.video-item:hover {
+    transform: scale(1.1); /* Slightly larger on hover */
+    z-index: 10; /* Bring the hovered item to the front */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent footer */
+    color: white;
+    margin-top: auto;
+}
